@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for skill,level in datalist %}
+    <div class="skill_box">
+        <div class="skill_name">{{skill[0]}}</div>
+        <div class="skill_level">
+            <span data-width="{{level[0]}}%"></span>
+        </div>
+    </div>
+  {%endfor%}
+
+{%endblock%}
